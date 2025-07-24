@@ -1,5 +1,6 @@
 :root {
-    --primary: 'Open Sans', sans-serif;
+    --primary: "Cal Sans", sans-serif;
+    --secondary: "Funnel", sans-serif;
     --gap: 1rem;
     --purple: #d04bd8;
     --grey: #D1CBC1;
@@ -9,7 +10,6 @@
 
 /* Base */
 body {
-    font-family: var(--sans-serif);
     background-color: azure;
     padding-top: 6rem; /* Adjust this value based on your header height */
 }
@@ -22,6 +22,7 @@ img {
     max-width: 80rem;
     margin: 0 auto;
     padding: 0 1rem;
+    
 }
 
 section {
@@ -32,6 +33,7 @@ section {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: var(--gap);
+    
 }
 
 .flex {
@@ -66,14 +68,20 @@ section {
 
 /* Typography */
 
-h1, h2, h3, h4, h5, h6, p, li, a { line-height: 1.5;}
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, li, a {
+
+   font-family:  var(--primary), sans-serif; 
     font-weight: var(--bold);
+    line-height: 1.5;
     color: #36352c;
 }
 
+p {
+    font-family: var(--secondary)
+}
+
 h1 { 
-    font-size: 2rem; 
+    font-size: 2rem;
 }
 h2 { 
     font-size: 1.875rem; 
@@ -111,6 +119,7 @@ h6{
     width: 5rem;
     min-width: 5rem; /* Force minimum width */
     max-width: none; /* Override the global max-width rule */
+    animation: fadeInLeft 3s ease forwards;
 }
 
 .site-header__menu {
@@ -187,6 +196,7 @@ li:nth-of-type(8) { animation-delay: 2.6s; }
     bottom: 0;
     left: 0;
     width: 100%;
+    animation: fadeInUp 3s ease forwards;
     
 }
 
