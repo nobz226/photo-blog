@@ -1,5 +1,7 @@
 # Through My Lens - Urban Photography Blog
 
+https://nobz226.github.io/photo-blog/
+
 A modern, responsive photography blog showcasing urban street photography from Vancouver, Canada. Built with semantic HTML5, CSS3 Grid, and smooth animations to create an engaging visual experience.
 
 ## About
