@@ -168,7 +168,8 @@ photo-blog/
 ## How to Run
 
 ### **Local Development**
-1. Clone or download the project files
+1. Clone or download the project files from:
+https://github.com/nobz226/photo-blog.git
 2. Open `index.html` in your web browser
 3. No build process required - pure HTML/CSS
 
