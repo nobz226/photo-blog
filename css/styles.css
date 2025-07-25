@@ -720,6 +720,28 @@ transform 0.3s ease-in-out;
     transform: scale(1.05);
 }
 
+.photo-item::after {
+    content: "Click to open in new window";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--purple);
+    font-family: var(--primary);
+    font-weight: var(--bold);
+    font-size: 1.2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.photo-item:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 .photo-item:nth-child(1) { animation-delay: 0.4s; }
 .photo-item:nth-child(2) { animation-delay: 0.6s; }
 .photo-item:nth-child(3) { animation-delay: 0.8s; }
