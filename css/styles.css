@@ -891,6 +891,11 @@ li:nth-of-type(4) {
   animation-delay: 1.4s;
 }
 
+
+.photo-item:nth-child(12) {
+  animation-delay: 1.6s;
+}
+
 .photo-item img {
   grid-area: image;
   width: 100%;
