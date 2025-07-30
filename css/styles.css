@@ -197,7 +197,7 @@ li:nth-of-type(4) {
 
 /* Home Banner */
 .home-banner {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 16 / 9;
   background: azure url("../images/intro.jpg") no-repeat scroll center;
   background-size: cover;
   position: relative;
@@ -227,6 +227,7 @@ li:nth-of-type(4) {
 .home-intro__image,
 .home-intro__content {
   grid-column: auto / span 12;
+  height: 70%;
 }
 
 .home-intro__content {
