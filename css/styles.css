@@ -227,7 +227,7 @@ li:nth-of-type(4) {
 .home-intro__image,
 .home-intro__content {
   grid-column: auto / span 12;
-  height: 70%;
+  height: 100%;
 }
 
 .home-intro__content {
@@ -890,11 +890,10 @@ li:nth-of-type(4) {
 .photo-item:nth-child(11) {
   animation-delay: 1.4s;
 }
-
-
 .photo-item:nth-child(12) {
   animation-delay: 1.6s;
 }
+
 
 .photo-item img {
   grid-area: image;
@@ -967,7 +966,11 @@ li:nth-of-type(4) {
 }
 
 @media screen and (max-width: 600px) {
-  /* Base */
+  
+   /* Base */
+  body {
+    padding-top: 4rem; 
+  }
   .container {
     padding: 0 0.5rem;
   }
